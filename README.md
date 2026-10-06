@@ -67,22 +67,8 @@ Sempre que uma alteração é realizada, o método:
 ```dart
 notifyListeners();
 ```
-
 avisa os widgets que estão observando o Provider para atualizarem a interface.
 
-## Requisitos da atividade
-
-| Requisito | Como foi atendido |
-|---|---|
-| Flutter | Aplicação desenvolvida em Flutter |
-| Provider | Pacote `provider` |
-| No mínimo 2 páginas | HomePage e EstatisticasPage |
-| Estado compartilhado | Lista de jogos no GameProvider |
-| Ação que altera o estado | Adicionar, remover e alterar status |
-| ChangeNotifier | GameProvider herda de ChangeNotifier |
-| notifyListeners() | Usado após alterações no estado |
-| Interface organizada | Cards, menus, botões e estatísticas |
-| Tema diferente do e-commerce | Aplicativo de gerenciamento de jogos |
 
 ## Como executar
 
@@ -92,9 +78,3 @@ Depois de criar o projeto:
 flutter pub get
 flutter run
 ```
-
-## Observação
-
-Os dados ficam somente em memória. Ao fechar o aplicativo, os jogos adicionados
-durante a execução são perdidos. Isso foi feito para manter o projeto simples e
-focado no conceito de gerenciamento de estado com Provider.
